@@ -1,0 +1,18 @@
+#!/bin/sh
+TDIR="/tmp"
+LDIR="/tmp/luci-*"
+SVC_LOG="log"
+SVC_RPC="rpcd"
+SVC_WEB="uhttpd"
+
+sync
+echo 3 > /proc/sys/vm/drop_caches
+sleep 2
+
+rm -rf $LDIR
+rm -rf $TDIR/luci-sessions/*
+
+/etc/init.d/$SVC_LOG restart
+sleep 2
+/etc/init.d/$SVC_RPC restart
+/etc/init.d/$SVC_WEB restart

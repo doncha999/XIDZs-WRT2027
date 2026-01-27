@@ -28,7 +28,11 @@ packages_custom+=(
     # Modem info packages
     "modeminfo_|http://31.57.47.64/packages/24.10/packages/aarch64_generic/modemfeed"
     "luci-app-modeminfo_|http://31.57.47.64/packages/24.10/packages/aarch64_generic/modemfeed"
-    "automodem_1.0.8_all.ipk|http://31.57.47.64/packages/24.10/packages/aarch64_generic/modemfeed"
+    "automodem_|http://31.57.47.64/packages/24.10/packages/aarch64_generic/modemfeed"
+    "modeminfo-qmi_|http://31.57.47.64/packages/24.10/packages/aarch64_generic/modemfeed"
+    "modeminfo-serial-dell_|http://31.57.47.64/packages/24.10/packages/aarch64_generic/modemfeed"
+    "modeminfo-serial-telit_|http://31.57.47.64/packages/24.10/packages/aarch64_generic/modemfeed"
+    "luci-app-mmconfig_|http://31.57.47.64/packages/24.10/packages/aarch64_generic/modemfeed"
     #"modeminfo-serial-tw_|${REPOS[KIDDIN9]}"
     #"modeminfo-serial-dell_|${REPOS[KIDDIN9]}"
     #"modeminfo-serial-sierra_|${REPOS[KIDDIN9]}"

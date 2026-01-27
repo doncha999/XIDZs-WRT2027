@@ -30,12 +30,12 @@ kmod-usb-serial kmod-usb-serial-option kmod-nls-utf8 kmod-usb-serial-wwan \
 kmod-usb-serial-qualcomm kmod-usb-serial-sierrawireless kmod-usb-acm kmod-usb-wdm \
 kmod-usb-net-rndis kmod-usb-net-cdc-ether kmod-usb-net-cdc-ncm kmod-usb-net-sierrawireless \
 kmod-usb-net-qmi-wwan kmod-usb-net-huawei-cdc-ncm kmod-usb-net-cdc-mbim \
-uqmi libqmi qmi-utils umbim libmbim mbim-utils luci-proto-qmi luci-proto-ncm \
+uqmi libqmi qmi-utils umbim libmbim mbim-utils luci-proto-qmi \
 modemmanager luci-proto-modemmanager usb-modeswitch xmm-modem luci-proto-xmm"
 
 # MODEM TOOLS
 PACKAGES+=" picocom minicom"
-PACKAGES+=" modeminfo-serial-dell modeminfo-serial-fibocom modeminfo-serial-sierra modeminfo-serial-tw modeminfo-serial-xmm"
+#PACKAGES+=" modeminfo-serial-dell modeminfo-serial-fibocom modeminfo-serial-sierra modeminfo-serial-tw modeminfo-serial-xmm"
 
 # VPN TUNNEL
 OPENCLASH="coreutils-nohup ipset ip-full libcap libcap-bin ruby ruby-yaml kmod-tun kmod-inet-diag kmod-nft-tproxy luci-app-openclash"
@@ -84,8 +84,8 @@ add_tunnel_packages() {
 }
 
 # UTILITIES
-PACKAGES+=" luci-app-diskman luci-app-mmconfig internet-detector internet-detector-mod-modem-restart luci-app-internet-detector"
-PACKAGES+=" luci-app-3ginfo-lite luci-app-netmonitor luci-app-eqosplus ookla-speedtest"
+PACKAGES+=" luci-app-diskman internet-detector internet-detector-mod-modem-restart luci-app-internet-detector"
+PACKAGES+=" luci-app-netmonitor luci-app-eqosplus"
 
 # THEMES & REMOTE ACCESS
 PACKAGES+=" luci-theme-argon luci-theme-alpha"
@@ -97,7 +97,7 @@ PACKAGES+=" php8 php8-cli php8-fastcgi php8-fpm php8-mod-session php8-mod-ctype 
 # MISC PACKAGES
 MISC+=" zoneinfo-core zoneinfo-asia jq htop httping adb openssh-sftp-server zram-swap screen \
 atc-fib-l8x0_gl atc-fib-fm350_gl luci-proto-atc luci-app-ipinfo luci-app-lite-watchdog \
-luci-app-poweroffdevice luci-app-ramfree luci-app-tinyfm luci-app-ttyd luci-app-mactodong luci-app-ttl modeminfo luci-app-modeminfo automodem"
+luci-app-poweroffdevice luci-app-ramfree luci-app-tinyfm luci-app-ttyd luci-app-mactodong luci-app-ttl modeminfo modeminfo-qmi luci-app-modeminfo automodem modeminfo-serial-dell modeminfo-serial-telit luci-app-mmconfig"
 
 # PROFILE SPECIFIC
 configure_profile_packages() {

@@ -26,9 +26,9 @@ REPOS+=(
 declare -a packages_custom
 packages_custom+=(
     # Modem info packages
-    "modeminfo_|https://openwrt.132lan.ru/packages/24.10/packages/aarch64_generic/modemfeed"
-    "luci-app-mmconfig_|https://api.github.com/repos/doncha999/XIDZs-WRT2027/contents/packages/luci-app-mmconfig_all.ipk"
-    "automodem_1.0.8_all.ipk|https://raw.githubusercontent.com/routerich/packages.routerich/24.10.4/routerich/automodem_1.0.8_all.ipk"
+    "modeminfo_|http://31.57.47.64/packages/24.10/packages/aarch64_generic/modemfeed"
+    "luci-app-modeminfo_|http://31.57.47.64/packages/24.10/packages/aarch64_generic/modemfeed"
+    "automodem_1.0.8_all.ipk|http://31.57.47.64/packages/24.10/packages/aarch64_generic/modemfeed"
     #"modeminfo-serial-tw_|${REPOS[KIDDIN9]}"
     #"modeminfo-serial-dell_|${REPOS[KIDDIN9]}"
     #"modeminfo-serial-sierra_|${REPOS[KIDDIN9]}"

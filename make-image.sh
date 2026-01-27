@@ -88,7 +88,7 @@ PACKAGES+=" luci-app-diskman internet-detector internet-detector-mod-modem-resta
 PACKAGES+=" luci-app-netmonitor luci-app-eqosplus"
 
 # THEMES & REMOTE ACCESS
-PACKAGES+=" luci-theme-argon luci-theme-alpha"
+#PACKAGES+=" luci-theme-argon luci-theme-alpha"
 PACKAGES+=" tailscale luci-app-tailscale"
 
 # PHP8
@@ -97,7 +97,7 @@ PACKAGES+=" php8 php8-cli php8-fastcgi php8-fpm php8-mod-session php8-mod-ctype 
 # MISC PACKAGES
 MISC+=" zoneinfo-core zoneinfo-asia jq htop httping adb openssh-sftp-server zram-swap screen \
 atc-fib-l8x0_gl atc-fib-fm350_gl luci-proto-atc luci-app-ipinfo luci-app-lite-watchdog \
-luci-app-poweroffdevice luci-app-ramfree luci-app-tinyfm luci-app-ttyd luci-app-mactodong luci-app-ttl modeminfo modeminfo-qmi luci-app-modeminfo automodem modeminfo-serial-dell modeminfo-serial-telit luci-app-mmconfig"
+luci-app-poweroffdevice luci-app-ramfree luci-app-tinyfm luci-app-ttyd luci-app-mactodong modeminfo modeminfo-qmi luci-app-modeminfo automodem modeminfo-serial-dell modeminfo-serial-telit luci-app-mmconfig"
 
 # PROFILE SPECIFIC
 configure_profile_packages() {

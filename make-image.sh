@@ -34,7 +34,7 @@ uqmi libqmi qmi-utils umbim libmbim mbim-utils luci-proto-qmi luci-proto-ncm \
 modemmanager luci-proto-modemmanager usb-modeswitch xmm-modem luci-proto-xmm"
 
 # MODEM TOOLS
-PACKAGES+=" atinout modeminfo modemband sms-tool luci-app-modeminfo luci-app-modemband luci-app-sms-tool-js picocom minicom"
+PACKAGES+=" picocom minicom"
 PACKAGES+=" modeminfo-serial-dell modeminfo-serial-fibocom modeminfo-serial-sierra modeminfo-serial-tw modeminfo-serial-xmm"
 
 # VPN TUNNEL
@@ -96,8 +96,8 @@ PACKAGES+=" php8 php8-cli php8-fastcgi php8-fpm php8-mod-session php8-mod-ctype 
 
 # MISC PACKAGES
 MISC+=" zoneinfo-core zoneinfo-asia jq htop httping adb openssh-sftp-server zram-swap screen \
-atc-fib-l8x0_gl atc-fib-fm350_gl luci-proto-atc luci-app-ipinfo luci-app-lite-watchdog luci-app-droidnet \
-luci-app-poweroffdevice luci-app-ramfree luci-app-tinyfm luci-app-ttyd luci-app-mactodong luci-app-ttl"
+atc-fib-l8x0_gl atc-fib-fm350_gl luci-proto-atc luci-app-ipinfo luci-app-lite-watchdog \
+luci-app-poweroffdevice luci-app-ramfree luci-app-tinyfm luci-app-ttyd luci-app-mactodong luci-app-ttl modeminfo luci-app-modeminfo automodem"
 
 # PROFILE SPECIFIC
 configure_profile_packages() {

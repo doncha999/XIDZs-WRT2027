@@ -26,14 +26,15 @@ REPOS+=(
 declare -a packages_custom
 packages_custom+=(
     # Modem info packages
-    "modeminfo_|${REPOS[KIDDIN9]}"
-    "luci-app-modeminfo_|${REPOS[KIDDIN9]}"
-    "modeminfo-serial-tw_|${REPOS[KIDDIN9]}"
-    "modeminfo-serial-dell_|${REPOS[KIDDIN9]}"
-    "modeminfo-serial-sierra_|${REPOS[KIDDIN9]}"
-    "modeminfo-serial-xmm_|${REPOS[KIDDIN9]}"
-    "modeminfo-serial-fibocom_|${REPOS[KIDDIN9]}"
-    "modeminfo-serial-sierra_|${REPOS[KIDDIN9]}"
+    "modeminfo_|https://api.github.com/repos/routerich/packages.routerich/contents/routerich?ref=24.10.4"
+    "luci-app-modeminfo_|https://api.github.com/repos/routerich/packages.routerich/contents/routerich?ref=24.10.4"
+    "automodem_|https://api.github.com/repos/routerich/packages.routerich/contents/routerich?ref=24.10.4"
+    #"modeminfo-serial-tw_|${REPOS[KIDDIN9]}"
+    #"modeminfo-serial-dell_|${REPOS[KIDDIN9]}"
+    #"modeminfo-serial-sierra_|${REPOS[KIDDIN9]}"
+    #"modeminfo-serial-xmm_|${REPOS[KIDDIN9]}"
+    #"modeminfo-serial-fibocom_|${REPOS[KIDDIN9]}"
+    #"modeminfo-serial-sierra_|${REPOS[KIDDIN9]}"
     
     # System utilities
     "atinout_|${REPOS[KIDDIN9]}"
@@ -45,18 +46,18 @@ packages_custom+=(
     "luci-app-atcommands_|${REPOS[KIDDIN9]}"
     
     # VPN services
-    "tailscale_|${REPOS[OPENWRT]}/packages"
+    #"tailscale_|${REPOS[OPENWRT]}/packages"
     
     # Display & interface
     "luci-app-oled_|${REPOS[KIDDIN9]}"
-    "modemband_|${REPOS[KYARUCLOUD_IMMORTALWRT]}/packages"
+    #"modemband_|${REPOS[KYARUCLOUD_IMMORTALWRT]}/packages"
     "luci-app-ramfree_|${REPOS[KYARUCLOUD_IMMORTALWRT]}/luci"
-    "luci-app-modemband_|${REPOS[KYARUCLOUD_IMMORTALWRT]}/luci"
-    "luci-app-sms-tool-js_|${REPOS[KYARUCLOUD_IMMORTALWRT]}/luci"
+    #"luci-app-modemband_|${REPOS[KYARUCLOUD_IMMORTALWRT]}/luci"
+    #"luci-app-sms-tool-js_|${REPOS[KYARUCLOUD_IMMORTALWRT]}/luci"
     "dns2tcp_|${REPOS[KYARUCLOUD_IMMORTALWRT]}/packages"
     
     # Network tools
-    "ookla-speedtest_|${REPOS[KIDDIN9]}"
+    #"ookla-speedtest_|${REPOS[KIDDIN9]}"
     "luci-app-eqosplus_|${REPOS[KIDDIN9]}"
     "luci-app-internet-detector_|${REPOS[KIDDIN9]}"
     "internet-detector_|${REPOS[KIDDIN9]}"
@@ -65,13 +66,13 @@ packages_custom+=(
     
     # GitHub releases (latest)
     "luci-app-tinyfm_|https://api.github.com/repos/bobbyunknown/luci-app-tinyfm/releases/latest"
-    "luci-app-droidnet_|https://api.github.com/repos/animegasan/luci-app-droidmodem/releases/latest"
-    "luci-theme-alpha_|https://api.github.com/repos/de-quenx/luci-theme-alpha/releases/latest"
-    "luci-app-tailscale_|https://api.github.com/repos/asvow/luci-app-tailscale/releases/latest"
+    #"luci-app-droidnet_|https://api.github.com/repos/animegasan/luci-app-droidmodem/releases/latest"
+    #"luci-theme-alpha_|https://api.github.com/repos/de-quenx/luci-theme-alpha/releases/latest"
+    #"luci-app-tailscale_|https://api.github.com/repos/asvow/luci-app-tailscale/releases/latest"
     "luci-app-ipinfo_|https://api.github.com/repos/bobbyunknown/luci-app-ipinfo/releases/latest"
-    "luci-app-netmonitor_|https://api.github.com/repos/de-quenx/luci-app-netmonitor/releases/latest"
-    "luci-theme-argon_|https://api.github.com/repos/de-quenx/luci-theme-argon/releases/latest"
-    "luci-app-ttl_|https://api.github.com/repos/de-quenx/custom-x/releases/latest"
+    #"luci-app-netmonitor_|https://api.github.com/repos/de-quenx/luci-app-netmonitor/releases/latest"
+    #"luci-theme-argon_|https://api.github.com/repos/de-quenx/luci-theme-argon/releases/latest"
+    #"luci-app-ttl_|https://api.github.com/repos/de-quenx/custom-x/releases/latest"
 )
 
 # Add Amlogic packages for specific device types

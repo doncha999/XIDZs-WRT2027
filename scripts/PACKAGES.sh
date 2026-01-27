@@ -26,9 +26,9 @@ REPOS+=(
 declare -a packages_custom
 packages_custom+=(
     # Modem info packages
-    "modeminfo_|https://raw.githubusercontent.com/routerich/packages.routerich/24.10.4/routerich"
-    "luci-app-modeminfo_|https://raw.githubusercontent.com/routerich/packages.routerich/24.10.4/routerich"
-    "automodem_|https://raw.githubusercontent.com/routerich/packages.routerich/24.10.4/routerich"
+    "modeminfo_|https://raw.githubusercontent.com/routerich/packages.routerich/24.10.4/routerich/modeminfo_1.1.1_all.ipk"
+    "luci-app-modeminfo_|https://raw.githubusercontent.com/routerich/packages.routerich/24.10.4/routerich/luci-app-modeminfo_1.5.7-r1_all.ipk"
+    "automodem_|https://raw.githubusercontent.com/routerich/packages.routerich/24.10.4/routerich/automodem_1.0.8_all.ipk"
     #"modeminfo-serial-tw_|${REPOS[KIDDIN9]}"
     #"modeminfo-serial-dell_|${REPOS[KIDDIN9]}"
     #"modeminfo-serial-sierra_|${REPOS[KIDDIN9]}"

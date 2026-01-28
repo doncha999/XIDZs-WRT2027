@@ -31,7 +31,7 @@ kmod-usb-serial-qualcomm kmod-usb-serial-sierrawireless kmod-usb-acm kmod-usb-wd
 kmod-usb-net-rndis kmod-usb-net-cdc-ether kmod-usb-net-cdc-ncm kmod-usb-net-sierrawireless \
 kmod-usb-net-qmi-wwan kmod-usb-net-huawei-cdc-ncm kmod-usb-net-cdc-mbim \
 uqmi libqmi qmi-utils umbim libmbim mbim-utils luci-proto-qmi \
-modemmanager luci-proto-modemmanager usb-modeswitch xmm-modem luci-proto-xmm"
+modemmanager luci-proto-modemmanager usb-modeswitch xmm-modem luci-proto-xmm kmod-tun kmod-inet-diag sing-box ca-bundle"
 
 # MODEM TOOLS
 PACKAGES+=" picocom minicom"

@@ -43,9 +43,9 @@ fi
 echo "Disabling OPKG signature checking..."
 sed -i 's/option check_signature/# option check_signature/g' "$OPKG_CONF"
 
-echo "Adding custom repository..."
-ARCH=$(grep "OPENWRT_ARCH" /etc/os-release | awk -F '"' '{print $2}')
-echo "src/gz custom_packages https://dl.openwrt.ai/latest/packages/$ARCH/kiddin9" >> /etc/opkg/customfeeds.conf
+#echo "Adding custom repository..."
+#ARCH=$(grep "OPENWRT_ARCH" /etc/os-release | awk -F '"' '{print $2}')
+#echo "src/gz custom_packages https://dl.openwrt.ai/latest/packages/$ARCH/kiddin9" >> /etc/opkg/customfeeds.conf
 
 # Basic system
 echo "Setting root password..."
@@ -53,7 +53,7 @@ echo "Setting root password..."
 
 echo "Configuring hostname and timezone..."
 uci batch <<EOF
-set system.@system[0].hostname='XIDZsWRT'
+set system.@system[0].hostname='OrangePiZero3'
 set system.@system[0].timezone='WIB-7'
 set system.@system[0].zonename='Asia/Jakarta'
 delete system.ntp.server
@@ -72,30 +72,30 @@ commit luci
 EOF
 
 # network interface
-echo "Configuring network interfaces..."
-uci batch <<EOF
-set network.wan=interface
-set network.wan.proto='dhcp'
-set network.wan.device='eth1'
-set network.tethering=interface
-set network.tethering.proto='dhcp'
-set network.tethering.device='usb0'
-set network.mm=interface
-set network.mm.proto='modemmanager'
-set network.mm.device='/sys/devices/platform/scb/fd500000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/usb2/2-1'
-set network.mm.apn='internet'
-set network.mm.auth='none'
-set network.mm.iptype='ipv4'
-set network.mm.force_connection='1'
-commit network
-EOF
+#echo "Configuring network interfaces..."
+#uci batch <<EOF
+#set network.wan=interface
+#set network.wan.proto='dhcp'
+#set network.wan.device='eth1'
+#set network.tethering=interface
+#set network.tethering.proto='dhcp'
+#set network.tethering.device='usb0'
+#set network.mm=interface
+#set network.mm.proto='modemmanager'
+#set network.mm.device='/sys/devices/platform/scb/fd500000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/usb2/2-1'
+#set network.mm.apn='internet'
+#set network.mm.auth='none'
+#set network.mm.iptype='ipv4'
+#set network.mm.force_connection='1'
+#commit network
+#EOF
 
 # firewall
-echo "Configuring firewall..."
-uci batch <<EOF
-set firewall.@zone[1].network='tethering wan mm'
-commit firewall
-EOF
+#echo "Configuring firewall..."
+#uci batch <<EOF
+#set firewall.@zone[1].network='tethering wan mm'
+#commit firewall
+#EOF
 
 # wireless
 if [ -d /sys/class/ieee80211 ] && [ "$(ls /sys/class/ieee80211 2>/dev/null)" ]; then

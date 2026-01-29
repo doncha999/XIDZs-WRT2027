@@ -97,7 +97,7 @@ PACKAGES+=" php8 php8-cli php8-fastcgi php8-fpm php8-mod-session php8-mod-ctype 
 # MISC PACKAGES
 MISC+=" zoneinfo-core zoneinfo-asia jq htop httping adb openssh-sftp-server zram-swap screen \
 atc-fib-l8x0_gl atc-fib-fm350_gl luci-proto-atc luci-app-ipinfo luci-app-lite-watchdog \
-luci-app-poweroffdevice luci-app-ramfree luci-app-tinyfm luci-app-ttyd luci-app-mactodong modeminfo modeminfo-qmi luci-app-modeminfo automodem modeminfo-serial-dell modeminfo-serial-telit luci-app-mmconfig podkop luci-app-podkop luci-theme-routerich atinout luci-app-atinout"
+luci-app-poweroffdevice luci-app-ramfree luci-app-tinyfm luci-app-ttyd luci-app-mactodong modeminfo modeminfo-qmi luci-app-modeminfo automodem modeminfo-serial-dell modeminfo-serial-telit luci-app-mmconfig podkop luci-app-podkop luci-theme-routerich atinout luci-app-atinout smstools3 luci-app-smstools3"
 
 # PROFILE SPECIFIC
 configure_profile_packages() {

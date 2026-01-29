@@ -38,8 +38,6 @@ packages_custom+=(
     "podkop_|http://31.57.47.64/packages/24.10/packages/aarch64_generic/modemfeed"
     "luci-app-podkop_|http://31.57.47.64/packages/24.10/packages/aarch64_generic/modemfeed"
     "luci-theme-routerich_|http://31.57.47.64/packages/24.10/packages/aarch64_generic/modemfeed"
-    "modemband_|http://31.57.47.64/packages/24.10/packages/aarch64_generic/modemfeed"
-    "luci-app-modemband_|http://31.57.47.64/packages/24.10/packages/aarch64_generic/modemfeed"
     #"modeminfo-serial-tw_|${REPOS[KIDDIN9]}"
     #"modeminfo-serial-dell_|${REPOS[KIDDIN9]}"
     #"modeminfo-serial-sierra_|${REPOS[KIDDIN9]}"

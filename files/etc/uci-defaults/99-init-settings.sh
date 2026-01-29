@@ -101,6 +101,9 @@ EOF
 if [ -d /sys/class/ieee80211 ] && [ "$(ls /sys/class/ieee80211 2>/dev/null)" ]; then
     echo "Wireless detected - configuring wireless..."
     uci batch 2>/dev/null <<EOF
+del wireless.radio0.htmode
+set wireless.radio0.band='2g'
+set wireless.radio0.channel='3'
 set wireless.@wifi-device[0].disabled='0'
 set wireless.@wifi-iface[0].disabled='0'
 set wireless.@wifi-iface[0].mode='ap'

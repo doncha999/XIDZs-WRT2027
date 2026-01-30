@@ -39,7 +39,6 @@ packages_custom+=(
     "luci-app-podkop_|http://31.57.47.64/packages/24.10/packages/aarch64_generic/modemfeed"
     "luci-theme-routerich_|http://31.57.47.64/packages/24.10/packages/aarch64_generic/modemfeed"
     "smstools3_|http://31.57.47.64/packages/24.10/packages/aarch64_generic/modemfeed"
-    "tailscale_|http://31.57.47.64/packages/24.10/packages/aarch64_generic/modemfeed"
     "luci-app-tailscale_|http://31.57.47.64/packages/24.10/packages/aarch64_generic/modemfeed"
     #"modeminfo-serial-tw_|${REPOS[KIDDIN9]}"
     #"modeminfo-serial-dell_|${REPOS[KIDDIN9]}"
@@ -58,7 +57,7 @@ packages_custom+=(
     "luci-app-atcommands_|${REPOS[KIDDIN9]}"
     
     # VPN services
-    #"tailscale_|${REPOS[OPENWRT]}/packages"
+    "tailscale_|${REPOS[OPENWRT]}/packages"
     
     # Display & interface
     "luci-app-oled_|${REPOS[KIDDIN9]}"

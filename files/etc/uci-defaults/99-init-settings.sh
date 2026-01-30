@@ -67,7 +67,7 @@ EOF
 echo "Setting default language and theme..."
 uci batch <<EOF
 set luci.@core[0].lang='en'
-set luci.main.mediaurlbase='/luci-static/routerich'
+set luci.main.mediaurlbase='/luci-static/bootstrap'
 commit luci
 EOF
 

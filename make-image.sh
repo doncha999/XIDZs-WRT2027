@@ -89,7 +89,7 @@ PACKAGES+=" luci-app-eqosplus"
 
 # THEMES & REMOTE ACCESS
 #PACKAGES+=" luci-theme-argon luci-theme-alpha"
-#PACKAGES+=" tailscale luci-app-tailscale"
+PACKAGES+=" tailscale luci-app-tailscale"
 
 # PHP8
 PACKAGES+=" php8 php8-cli php8-fastcgi php8-fpm php8-mod-session php8-mod-ctype php8-mod-fileinfo php8-mod-zip php8-mod-iconv php8-mod-mbstring"

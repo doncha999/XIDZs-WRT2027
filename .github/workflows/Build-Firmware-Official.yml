@@ -530,7 +530,7 @@ jobs:
             make clean
           fi
 
-          time ./shell/MAKE-IMAGE.sh ${{ env.PROFILE }} ${{ env.TUNNEL }}
+          time ./scripts/MAKE-IMAGE.sh ${{ env.PROFILE }} ${{ env.TUNNEL }}
 
           for file in bin/targets/"${{ env.TARGET_SYSTEM }}"/*.img.gz; do
             if [ -f "$file" ]; then
@@ -550,7 +550,7 @@ jobs:
         run: |
           cd ${{ env.WORKING_DIR }}
 
-          ./shell/RENAMEFW.sh
+          ./scripts/RENAMEFW.sh
 
           echo "status=success" >> "$GITHUB_OUTPUT"
 

@@ -105,14 +105,14 @@ download_custom_scripts() {
     log "INFO" "Downloading custom scripts"
     
     local scripts=(
-        "https://raw.githubusercontent.com/frizkyiman/fix-read-only/main/install2.sh|files/root"
-        "https://raw.githubusercontent.com/syntax-xidz/contenx/main/shell/xdev|files/usr/bin"
-        "https://raw.githubusercontent.com/syntax-xidz/contenx/main/shell/syntax|files/usr/bin"
-        "https://raw.githubusercontent.com/syntax-xidz/contenx/main/shell/xidz|files/usr/bin"
-        "https://raw.githubusercontent.com/syntax-xidz/contenx/main/shell/x-gpio|files/usr/bin"
-        "https://raw.githubusercontent.com/syntax-xidz/contenx/main/shell/x-gpioled|files/usr/bin"
-        "https://raw.githubusercontent.com/syntax-xidz/contenx/main/shell/xidzs|files/etc/init.d"
-        "https://raw.githubusercontent.com/syntax-xidz/contenx/main/shell/issue|files/etc/init.d"
+        #"https://raw.githubusercontent.com/frizkyiman/fix-read-only/main/install2.sh|files/root"
+        "https://raw.githubusercontent.com/syntax-xidz/contenx/main/xcli/xdev|files/usr/bin"
+        "https://raw.githubusercontent.com/syntax-xidz/contenx/main/xcli/syntax|files/usr/bin"
+        "https://raw.githubusercontent.com/syntax-xidz/contenx/main/xcli/xidz|files/usr/bin"
+        "https://raw.githubusercontent.com/syntax-xidz/contenx/main/xcli/shell/x-gpio|files/usr/bin"
+        "https://raw.githubusercontent.com/syntax-xidz/contenx/main/xcli/x-gpioled|files/usr/bin"
+        "https://raw.githubusercontent.com/syntax-xidz/contenx/main/xcli/xidzs|files/etc/init.d"
+        "https://raw.githubusercontent.com/syntax-xidz/contenx/main/xcli/issue|files/etc/init.d"
     )
     
     for script in "${scripts[@]}"; do

@@ -333,7 +333,7 @@ jobs:
               echo "ARCH_3=aarch64_generic" >> $GITHUB_ENV
               ;;
             "Orangepi Zero 3")
-              echo "PROFILE=xunlong_orangepi-zero-3" >> $GITHUB_ENV
+              echo "PROFILE=xunlong_orangepi-zero3" >> $GITHUB_ENV
               echo "TARGET_SYSTEM=sunxi/cortexa53" >> $GITHUB_ENV
               echo "TARGET_NAME=sunxi-cortexa53" >> $GITHUB_ENV
               echo "ARCH_1=arm64" >> $GITHUB_ENV

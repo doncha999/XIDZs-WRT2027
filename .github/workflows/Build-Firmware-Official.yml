@@ -516,7 +516,7 @@ jobs:
 
           df -hT ${PWD}
 
-          echo "status=success"
+          echo "status=success" >> "$GITHUB_OUTPUT"
 
       - name: Build Firmware Images
         id: build

@@ -488,7 +488,7 @@ jobs:
         run: |
           cd ${{ env.WORKING_DIR }}
 
-          chmod 755 shell/*.sh
+          chmod 755 scripts/*.sh
 
           echo "status=success" >> "$GITHUB_OUTPUT"
 
@@ -498,7 +498,7 @@ jobs:
         run: |
           cd ${{ env.WORKING_DIR }}
 
-          ./shell/PACKAGES.sh
+          ./scripts/PACKAGES.sh
 
           echo "status=success" >> "$GITHUB_OUTPUT"
 
@@ -508,11 +508,11 @@ jobs:
         run: |
           cd ${{ env.WORKING_DIR }}
 
-          ./shell/PATCH.sh
+          ./scripts/PATCH.sh
 
-          ./shell/MISC.sh
+          ./scripts/MISC.sh
 
-          ./shell/TUNNEL.sh ${{ env.TUNNEL }}
+          ./scripts/TUNNEL.sh ${{ env.TUNNEL }}
 
           df -hT ${PWD}
 
